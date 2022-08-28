@@ -1,0 +1,116 @@
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #3cb371;
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+.container {
+    display: flex;
+    width: 65%;
+    height: 100%;
+    flex-direction: row;
+    margin: 20px auto;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;   
+}
+
+img {
+    float: top;
+    object-fit: contain;
+}
+
+.textas {
+    padding: 20px;
+    overflow: hidden;
+}
+
+.abipusis {
+    text-align: justified;
+}
+
+.autorius {
+    float: left;
+    margin-top: 5rem;
+}
+
+.komentarai {
+    float: right;
+    margin-top: 5rem;
+}
+
+.bigautorius {
+    float: left;
+    margin-top: 1rem;
+}
+
+.bigkomentarai {
+    float: right;
+    margin-top: 1rem;
+}
+
+.big {
+    flex-grow: 3;
+    flex-direction: column;
+}
+
+.mazas {
+    flex-direction: column;
+}
+.article1 {
+    background: white;
+    margin-bottom: 20px;
+}
+.article2 {
+    background: white;
+}
+
+.article3 {
+    background: white;
+    margin-bottom: 20px;
+}
+.article {
+    background: white;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 500px) {
+    .container {
+        display: flex;
+        width: 320px;
+        margin: 0 auto;
+        flex-direction: column;
+        gap: 20px;  
+    }
+    .big {
+        flex-direction: column;
+        width: 320px;
+        margin: 0 auto;
+    }
+    .mazas {
+        flex-direction: column;
+        width: 320px;
+        margin: 0 auto;
+    }
+    img {
+        width: 320px;
+        object-fit: cover;
+    }
+
+    .autorius {
+        float: left;
+        margin-top: 0.5rem;
+    }
+    
+    .komentarai {
+        float: right;
+        margin-top: 0.5rem;
+    }
+}
